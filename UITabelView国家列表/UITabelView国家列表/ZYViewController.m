@@ -8,9 +8,10 @@
 
 #import "ZYViewController.h"
 #import "ZYCarModel.h"
+#import "ZYHeaderView.h"
 
 
-@interface ZYViewController ()<UITableViewDataSource>
+@interface ZYViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong)UITableView *tableView;
 @property(nonatomic, strong)NSArray *cars;
 
@@ -26,6 +27,7 @@
     UITableView *tableView = [[UITableView alloc]init];
     tableView.frame = self.view.bounds;
     self.tableView = tableView;
+    self.tableView.delegate = self;
     [self.view addSubview:tableView];
     self.tableView.dataSource = self;
 }
@@ -70,6 +72,19 @@
     return car.desc;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    //创建view
+    CGFloat width = self.view.bounds.size.width;
+    CGFloat height = 50;
+    CGFloat x = 0;
+    CGFloat y = 0;
+    ZYHeaderView *headerView = [[ZYHeaderView alloc]initWithFrame:CGRectMake(x, y, width, height)];
+    //传递数据
+    ZYCarModel *car = self.cars[section];
+    headerView.car = car;
+    return headerView;
+}
 
 #pragma mark - 懒加载
 - (UITableView *)tableView

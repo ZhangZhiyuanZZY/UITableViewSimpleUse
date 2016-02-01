@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1823A0A91C5EFC73002854B2 /* ZYHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1823A0A81C5EFC73002854B2 /* ZYHeaderView.m */; };
 		18AED0131C5B5EDF007CC08D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AED0121C5B5EDF007CC08D /* main.m */; };
 		18AED01E1C5B5EDF007CC08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AED01D1C5B5EDF007CC08D /* Assets.xcassets */; };
 		18AED0211C5B5EDF007CC08D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AED01F1C5B5EDF007CC08D /* LaunchScreen.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1823A0A71C5EFC73002854B2 /* ZYHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHeaderView.h; sourceTree = SOURCE_ROOT; };
+		1823A0A81C5EFC73002854B2 /* ZYHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYHeaderView.m; sourceTree = SOURCE_ROOT; };
 		18AED00E1C5B5EDF007CC08D /* UITabelView国家列表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITabelView国家列表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AED0121C5B5EDF007CC08D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18AED01D1C5B5EDF007CC08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				18AED04A1C5B6773007CC08D /* ZYViewController.m */,
 				18AED04E1C5B6C30007CC08D /* ZYCarModel.h */,
 				18AED04F1C5B6C30007CC08D /* ZYCarModel.m */,
+				1823A0A71C5EFC73002854B2 /* ZYHeaderView.h */,
+				1823A0A81C5EFC73002854B2 /* ZYHeaderView.m */,
 				18AED04C1C5B67DB007CC08D /* ZYMain.storyboard */,
 				18AED01D1C5B5EDF007CC08D /* Assets.xcassets */,
 				18AED01F1C5B5EDF007CC08D /* LaunchScreen.storyboard */,
@@ -287,6 +292,7 @@
 				18AED0501C5B6C30007CC08D /* ZYCarModel.m in Sources */,
 				18AED0131C5B5EDF007CC08D /* main.m in Sources */,
 				18AED04B1C5B6773007CC08D /* ZYViewController.m in Sources */,
+				1823A0A91C5EFC73002854B2 /* ZYHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +508,7 @@
 				18AED03D1C5B5EDF007CC08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18AED03E1C5B5EDF007CC08D /* Build configuration list for PBXNativeTarget "UITabelView国家列表Tests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				18AED0401C5B5EDF007CC08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18AED0411C5B5EDF007CC08D /* Build configuration list for PBXNativeTarget "UITabelView国家列表UITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				18AED0431C5B5EDF007CC08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
